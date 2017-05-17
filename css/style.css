@@ -1,3 +1,18 @@
 body {
   background-color: red;
 }
+
+.parent {
+  border: 1px solid black;
+  padding: 0;
+}
+
+#delorean {
+  position: absolute;
+  top: 50px;
+}
+
+#mcqueen {
+  position: relative;
+  top: 200px;
+}
