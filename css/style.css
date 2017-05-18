@@ -13,6 +13,11 @@ body {
 }
 
 #mcqueen {
-  position: relative;
+  position: absolute;
   top: 200px;
+}
+
+img.flags {
+  width: 70px;
+  height: 60px;
 }
