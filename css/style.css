@@ -2,6 +2,13 @@
   background: url(../imgs/russia_bg.jpg) no-repeat center center;
   background-size: cover;
   height: 740px;
+  z-index: -1;
+}
+
+.white {
+  background-color: rgba(255,255,255, .3);
+  z-index: 1;
+  height: 740px;
 }
 
 .header {
