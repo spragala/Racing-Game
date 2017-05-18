@@ -2,8 +2,8 @@ $(document).ready(function() {
   // sanity check
   console.log(".js is linked!")
 
-  let d = $("img#delorean");
-  let m = $("img#mcqueen");
+  let d = $("img#putin");
+  let m = $("img#trump");
 
   let endGame = false;
 
@@ -15,32 +15,32 @@ $(document).ready(function() {
     let maxWidth = $(window).width();
     if (endGame === false) {
       if (keyPress === 32) {
-        $("#delorean").animate({
+        $("#putin").animate({
           left: "+=100"
         }, 100);
-        if (d.position().left >= maxWidth - 400) {
+        if (d.position().left >= maxWidth - 370) {
           $(d).stop();
-          $("h1").text("Marty Wins")
+          $("h1").text("Putin Wins")
+          $(".game-board").append(`<h1 style="color:white">The world is destroyed!</h1>`)
           endGame = true
           return false;
         }
       } else if (keyPress === 13) {
-        $("#mcqueen").animate({
+        $("#trump").animate({
           left: "+=100"
         }, 100);
-        if (m.position().left >= maxWidth - 400) {
+        if (m.position().left >= maxWidth - 370) {
           $(m).stop();
-          $("h1").text("McQueen Wins")
+          $("h1").text("Trump Wins")
+          $(".game-board").append(`<h1 style="color:white">The world is destroyed!</h1>`)
           endGame = true;
           return false;
         }
       }
     }
-    console.log(d.position().left)
-    console.log(m.position().left)
   };
 
-  $(".btn").click(function(){
+  $(".btn").click(function() {
     document.location.reload();
   });
 

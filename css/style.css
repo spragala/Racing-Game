@@ -1,23 +1,65 @@
-body {
-  background-color: red;
+.game-board {
+  background: url(../imgs/russia_bg.jpg) no-repeat center center;
+  background-size: cover;
+  height: 740px;
 }
 
-.parent {
-  border: 1px solid black;
-  padding: 0;
+.header {
+  background-color: transparent;
+  color: #fff;
 }
 
-#delorean {
+.btn {
+  float: right;
+  margin: 35px 85px 0 0;
+  background-color: transparent;
+  color: #fff;
+  height: 64px;
+  width: 150px;
+  border: 2px solid #fff !important;
+  font-size: 20px;
+  font-family: 'Bubblegum Sans', cursive;
+  letter-spacing: .05em;
+}
+
+mark {
+  background-color: #fff !important;
+}
+
+.instructions p {
+  margin-left: 15px;
+  font-size: 20px;
+  font-family: 'Bubblegum Sans', cursive;
+  letter-spacing: .05em;
+}
+
+h1 {
+  font-family: 'Freckle Face', cursive;
+  font-size: 64px;
+  text-shadow: 2px 2px 3px black !important;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
+.doom {
+  margin: 100px 0 0 60px;
+}
+
+.finish {
+  margin: 50px 0 0 100px;
+  font-size: 50px;
+  font-family: 'Bubblegum Sans', cursive;
+  color: #fff;
+}
+
+#putin {
   position: absolute;
-  top: 50px;
+  top: 250px;
+  left: 65px;
 }
 
-#mcqueen {
+#trump {
   position: absolute;
-  top: 200px;
-}
-
-img.flags {
-  width: 70px;
-  height: 60px;
+  top: 480px;
+  left: 15px;
 }
